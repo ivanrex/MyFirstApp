@@ -15,6 +15,9 @@ public class DisplayMessageActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_display_message);
+		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+
 		// Show the Up button in the action bar.
 		setupActionBar();
 		Intent intent = getIntent();
